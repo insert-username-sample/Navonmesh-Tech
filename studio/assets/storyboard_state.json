@@ -1,0 +1,29 @@
+{
+    "blocks": [
+        {
+            "id": 1,
+            "title": "Signal: Trending in Hugging Face",
+            "script_en": "Breaking news in the world of AI: Trending in Hugging Face is making waves. This marks a significant shift in how we think about intelligence.",
+            "script_hi": "AI ki duniya mein ek badi khabar: Trending in Hugging Face ne sabko hairan kar diya hai. Yeh technology ke bhavishya ke liye ek bada kadam hai.",
+            "type": "16:9 MASTER",
+            "status": "Auto-Drafted"
+        },
+        {
+            "id": 2,
+            "title": "Signal: google-ai-edge / gallery",
+            "script_en": "Breaking news in the world of AI: google-ai-edge / gallery is making waves. This marks a significant shift in how we think about intelligence.",
+            "script_hi": "AI ki duniya mein ek badi khabar: google-ai-edge / gallery ne sabko hairan kar diya hai. Yeh technology ke bhavishya ke liye ek bada kadam hai.",
+            "type": "16:9 MASTER",
+            "status": "Auto-Drafted"
+        },
+        {
+            "id": 3,
+            "title": "Signal: Gemma 4 on iPhone",
+            "script_en": "Breaking news in the world of AI: Gemma 4 on iPhone is making waves. This marks a significant shift in how we think about intelligence.",
+            "script_hi": "AI ki duniya mein ek badi khabar: Gemma 4 on iPhone ne sabko hairan kar diya hai. Yeh technology ke bhavishya ke liye ek bada kadam hai.",
+            "type": "16:9 MASTER",
+            "status": "Auto-Drafted"
+        }
+    ],
+    "last_updated": "Live Now"
+}
