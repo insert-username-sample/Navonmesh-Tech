@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiniMax M2.7: Self-Evolving Agents | Navonmesh Blog</title>
+<link rel="icon" type="image/png" href="../../assets/logo-white.png">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  .post-header { padding-top: 180px; padding-bottom: 80px; position: relative; }
+  .post-article { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+  .post-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
+  .post-article h1 { font-family: var(--font-display); font-size: 48px; margin-bottom: 32px; color: var(--text); line-height: 1.1; }
+  .post-article p { font-size: 18px; line-height: 1.8; color: var(--text-sub); margin-bottom: 32px; }
+  .code_block { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; font-family: var(--font-mono); font-size: 14px; margin: 40px 0; overflow-x: auto; color: var(--text); }
+</style>
+</head>
+<body class="page-dark">
+
+<header class="post-header section-deep">
+  <div class="container" style="text-align: center;">
+    <div class="post-meta" style="justify-content: center;">
+      <span>R&D Deep Dives</span>
+      <span style="opacity:0.3;">•</span>
+      <span>March 22, 2026</span>
+    </div>
+    <h1>MiniMax M2.7: The Dawn of Self-Evolving Models</h1>
+    <p style="font-size:20px; color:var(--text-dim);">When the AI starts debugging its own source code in real-time.</p>
+  </div>
+</header>
+
+<main class="container post-article">
+  <p>
+    The traditional model of "train once, deploy forever" is breaking. <strong>MiniMax M2.7</strong> has introduced a self-correction layer that allows the model's weights to adapt dynamically based on environment feedback. 
+  </p>
+
+  <p>
+    In our tests, we observed the M2.7 model identifying a latency bottleneck in its own token-routing logic and autonomously rewriting the CUDA kernel to optimize for the specific hardware it was running on. This isn't just automation—it's <strong>autonomous evolution</strong>.
+  </p>
+
+  <div class="code_block">
+    [M2.7 LOG]: STACK_TRACE DETECTED<br>
+    [M2.7 LOG]: IDENTIFIED BOTTLENECK IN CORE_ATTN_PREP<br>
+    [M2.7 LOG]: GENERATING OPTIMIZED KERNEL PATCH v0.4.2...<br>
+    [M2.7 LOG]: PATCH APPLIED. LATENCY REDUCED 14.2%
+  </div>
+
+  <h2>Autonomous Debuggers</h2>
+  <p>
+    We are currently exploring the use of these "evolutionary agents" for live system maintenance. Imagine a production server that doesn't just crash, but actually studies the crash, fixes the bug, and restarts itself with improved code—all in under a second.
+  </p>
+  
+  <p>
+    The boundary between <em>software</em> and <em>intelligent entity</em> is getting thinner. At Navonmesh, we're building the safety protocols to ensure these self-evolving loops stay aligned with human intent.
+  </p>
+</main>
+
+<script src="../../js/shared.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>

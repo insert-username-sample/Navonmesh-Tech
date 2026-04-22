@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Glasswing & Claude Mythos | Navonmesh Blog</title>
+<meta name="description" content="Deep dive into Anthropic's Claude Mythos and the autonomous security hunt of Project Glasswing.">
+<link rel="icon" type="image/png" href="../../assets/logo-white.png">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  .post-header { padding-top: 180px; padding-bottom: 80px; position: relative; }
+  .post-article { max-width: 800px; margin: 0 auto; padding-bottom: 120px; }
+  .post-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; font-family: var(--font-mono); font-size: 12px; color: var(--accent); }
+  .post-article h1 { font-family: var(--font-display); font-size: 48px; margin-bottom: 32px; color: var(--text); line-height: 1.1; }
+  .post-article h2 { font-family: var(--font-display); font-size: 28px; margin-top: 64px; margin-bottom: 24px; color: var(--text); }
+  .post-article p { font-size: 18px; line-height: 1.8; color: var(--text-sub); margin-bottom: 32px; }
+  .post-article img { width: 100%; border-radius: 20px; margin: 40px 0; border: 1px solid var(--border); }
+  .post-article blockquote { border-left: 4px solid var(--accent); padding-left: 32px; margin: 48px 0; font-style: italic; color: var(--text); font-size: 20px; }
+</style>
+</head>
+<body class="page-dark">
+
+<header class="post-header section-deep">
+  <div class="container" style="text-align: center;">
+    <div class="post-meta" style="justify-content: center;">
+      <span>AI News</span>
+      <span style="opacity:0.3;">•</span>
+      <span>April 12, 2026</span>
+    </div>
+    <h1 style="max-width:900px; margin: 0 auto 32px;">Project Glasswing: Hunting Zero-Days with Claude Mythos</h1>
+    <p style="font-size:20px; color:var(--text-dim);">How Anthropic's new preview model found thousands of bugs in production systems autonomously.</p>
+  </div>
+</header>
+
+<main class="container post-article">
+  <p>
+    The cybersecurity landscape just experienced a seismic shift. Anthropic recently launched <strong>Project Glasswing</strong>, a dedicated initiative to stop hackers from using AI against infrastructure by building defensive AI that identifies vulnerabilities at a scale previously impossible for human teams.
+  </p>
+
+  <p>
+    At the heart of this project is a new model variant: <strong>Claude Mythos Preview</strong>. Unlike General Purpose models, Mythos is specifically tuned for recursive adversarial testing—essentially hunting down hidden zero-day bugs in massive codebases like the Linux Kernel, modern browsers, and OpenBSD.
+  </p>
+
+  <blockquote>
+    "Mythos doesn't just find syntax errors; it understands the logical race conditions and memory leaks that have remained hidden for decades."
+  </blockquote>
+
+  <h2>Autonomous Discovery at Scale</h2>
+  <p>
+    In its first 48 hours of deployment within the Glasswing framework, Claude Mythos identified over 2,400 high-severity vulnerabilities across open-source infrastructure. The model operates by simulating complex interaction chains, mimicking the thought process of a sophisticated nation-state actor but at the speed of parallelized compute.
+  </p>
+
+  <img src="../../assets/blog-mythos-deep.jpg" alt="Autonomous Security Dashboard">
+
+  <h2>A Unified Defensive Front</h2>
+  <p>
+    Big tech companies are already teaming up to patch these findings. The Glasswing protocol ensures that fixes are shared instantly across a consortium of partners, creating an "immune system" for the internet. This marks the transition from <em>reactionary patching</em> to <em>autonomous hardening</em>.
+  </p>
+
+  <p>
+    For builders, this means the barrier to entry for secure software is getting lower, provided you integrate agentic security auditors into your CI/CD pipeline. The age of manual security audits is coming to an end.
+  </p>
+
+  <div style="margin-top: 80px; padding: 40px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; text-align: center;">
+    <h3 style="margin-bottom:16px;">Want more technical breakdowns?</h3>
+    <p style="font-size:16px; margin-bottom:24px;">Join 500+ engineers receiving our weekly AI Search newsletter.</p>
+    <a href="../../newsletter.html" class="btn btn-primary">Subscribe to The Signal</a>
+  </div>
+</main>
+
+<script src="../../js/shared.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>

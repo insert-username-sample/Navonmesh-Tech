@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -131,6 +131,47 @@
 </style>
 </head>
 <body class="page-dark">
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<nav class="nav">
+  <div class="container nav-container" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/navonmes-white no bg.png" alt="Navonmesh">
+      <span>NAVONMESH</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="showcase.html">Portfolio</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+        <div class="toggle-icons">
+          <span class="moon">🌙</span>
+          <span class="sun">☀️</span>
+        </div>
+      </button>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <header class="section-deep" style="padding-top:160px; padding-bottom: 80px;">
   <div class="container">
@@ -153,7 +194,7 @@
       <!-- Blog 1: Claude Mythos -->
       <article class="blog-card" data-category="AI News">
         <div class="blog-card-img">
-          <img src="assets/blog-mythos.jpg" alt="Claude Mythos">
+          <img src="assets/blog-mythos.png" alt="Claude Mythos">
         </div>
         <div class="blog-content">
           <span class="blog-tag">AI News</span>
@@ -169,7 +210,7 @@
       <!-- Blog 2: DeepSeek Expert -->
       <article class="blog-card" data-category="AI News">
         <div class="blog-card-img">
-          <img src="assets/blog-deepseek.jpg" alt="DeepSeek Expert">
+          <img src="assets/blog-deepseek.png" alt="DeepSeek Expert">
         </div>
         <div class="blog-content">
           <span class="blog-tag">AI News</span>
@@ -185,7 +226,7 @@
       <!-- Blog 3: MiroThinker -->
       <article class="blog-card" data-category="R&D Deep Dives">
         <div class="blog-card-img">
-          <img src="assets/blog-mirothinker.jpg" alt="MiroThinker">
+          <img src="assets/blog-mirothinker.png" alt="MiroThinker">
         </div>
         <div class="blog-content">
           <span class="blog-tag">R&D Deep Dives</span>
@@ -201,7 +242,7 @@
       <!-- Blog 4: NVIDIA Vera Rubin -->
       <article class="blog-card" data-category="Science">
         <div class="blog-card-img">
-          <img src="assets/blog-nvidia.jpg" alt="NVIDIA Vera Rubin">
+          <img src="assets/blog-nvidia.png" alt="NVIDIA Vera Rubin">
         </div>
         <div class="blog-content">
           <span class="blog-tag">Science</span>
@@ -217,7 +258,7 @@
       <!-- Blog 5: MiniMax M2.7 -->
       <article class="blog-card" data-category="R&D Deep Dives">
         <div class="blog-card-img">
-          <img src="assets/blog-minimax.jpg" alt="MiniMax M2.7">
+          <img src="assets/blog-minimax.png" alt="MiniMax M2.7">
         </div>
         <div class="blog-content">
           <span class="blog-tag">R&D Deep Dives</span>
@@ -233,7 +274,7 @@
       <!-- Blog 6: Foundation-1 Music -->
       <article class="blog-card" data-category="Science">
         <div class="blog-card-img">
-          <img src="assets/blog-music.jpg" alt="Foundation-1 Music">
+          <img src="assets/blog-music.png" alt="Foundation-1 Music">
         </div>
         <div class="blog-content">
           <span class="blog-tag">Science</span>
@@ -269,8 +310,10 @@
     </div>
   </section>
 
-<script src="js/shared.js"></script>
-<script src="js/main.js"></script>
+
+
+
+
 <script>
   // Filter Logic
   const filterTabs = document.querySelectorAll('.filter-tab');
@@ -297,5 +340,32 @@
     });
   });
 </script>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="index.html" class="footer-logo">
+      <img src="assets/navonmes-white no bg.png" alt="Navonmesh">
+      <span>NAVONMESH</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="showcase.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Navonmesh · navonmesh.tech</p>
+  </div>
+</footer>
+
+<script src="js/shared.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -121,6 +121,47 @@
 </style>
 </head>
 <body class="page-dark">
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<nav class="nav">
+  <div class="container nav-container" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/navonmes-white no bg.png" alt="Navonmesh">
+      <span>NAVONMESH</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="showcase.html" class="active">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-switch" id="theme-toggle" aria-label="Toggle theme">
+        <div class="toggle-icons">
+          <span class="moon">🌙</span>
+          <span class="sun">☀️</span>
+        </div>
+      </button>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -346,41 +387,12 @@
 
 
 
-<script src="js/shared.js"></script>
+
+
+
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const themeBtn = document.querySelector(".theme-switch");
-    const tLogo = document.getElementById("tuitionly-logo");
-    const vLogo = document.querySelector(".vizo-logo");
-    const defaultLogos = document.querySelectorAll(".default-logo");
-    
-    const updateProjectLogos = () => {
-        const isLight = document.body.classList.contains("light");
-        
-        // Tuitionly
-        if (tLogo) {
-            tLogo.src = isLight ? "assets/tuitionly-logo-light.png" : "assets/tuitionly-logo-dark.png";
-        }
-        
-        // Vizo
-        if (vLogo) {
-            vLogo.src = isLight ? "assets/vizo-logo-black.png" : "assets/vizo-logo-white.png";
-        }
-        
-        // Default Navonmesh logos
-        defaultLogos.forEach(logo => {
-            logo.src = isLight ? "assets/navonmesh-black.png" : "assets/navonmesh-white.png";
-        });
-    };
-
-    // Initial run
-    updateProjectLogos();
-
-    // Toggle listener
-    themeBtn.addEventListener("click", () => {
-        setTimeout(updateProjectLogos, 50);
-    });
-
     // Filter Logic
     const filterTabs = document.querySelectorAll('.filter-tab');
     const projectCards = document.querySelectorAll('.project-card-link');
@@ -404,6 +416,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="index.html" class="footer-logo">
+      <img src="assets/navonmes-white no bg.png" alt="Navonmesh">
+      <span>NAVONMESH</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="showcase.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Navonmesh · navonmesh.tech</p>
+  </div>
+</footer>
+
+<script src="js/shared.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 

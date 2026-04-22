@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero Alpha — Secure AI OS | Navonmesh</title>
+<meta name="description" content="Research-level breakdown of Zero Alpha: A secure, private agentic AI Operating System.">
+<link rel="icon" type="image/png" href="../assets/logo-white.png">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .project-header { padding-top: 180px; padding-bottom: 80px; position: relative; overflow: hidden; }
+  .tech-specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-top: 64px; padding: 40px; background: var(--dark-mid); border: 1px solid var(--border); border-radius: 20px; }
+  .spec-item { display: flex; flex-direction: column; gap: 8px; }
+  .spec-label { font-family: var(--font-mono); font-size: 10px; color: var(--dim); letter-spacing: 0.1em; text-transform: uppercase; }
+  .spec-value { font-size: 16px; color: var(--white); font-weight: 500; }
+  .content-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; margin-top: 100px; align-items: start; }
+  .narrative h2 { font-family: var(--font-display); font-size: 32px; margin-bottom: 24px; color: var(--white); }
+  .narrative p { font-size: 17px; line-height: 1.8; color: var(--dim); margin-bottom: 32px; }
+  .outcome-box { padding: 48px; background: var(--dark-mid); border: 1px solid var(--accent); border-radius: 24px; position: relative; }
+  .outcome-box::before { content: "OUTCOME"; position: absolute; top: -12px; right: 24px; background: var(--accent); color: var(--dark); font-family: var(--font-mono); font-size: 10px; padding: 4px 12px; border-radius: 4px; font-weight: 700; }
+  .metric { margin-bottom: 32px; }
+  .metric-value { font-size: 48px; font-family: var(--font-display); font-weight: 800; color: var(--white); margin-bottom: 4px; }
+  .metric-label { font-size: 14px; color: var(--accent); font-weight: 500; }
+</style>
+</head>
+<body class="page-dark">
+
+
+
+  <div class="hero-bg"></div>
+  
+  <div class="container" style="position:relative; z-index:1; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+    <div>
+      <span class="label">Case Study 03</span>
+      <h1 class="page-hero-headline" style="margin-bottom:24px;">Zero Alpha:<br>The Security-First AI.</h1>
+      <p style="font-size:20px; color:var(--text-sub); max-width:700px; line-height:1.7;">
+        An agentic AI Operating System designed for privacy, deterministic output, and verified tool-use through multi-agent coordination.
+      </p>
+      <div class="tech-specs" style="margin-top: 40px;">
+        <div class="spec-item"><span class="spec-label">Category</span><span class="spec-value">Agentic OS</span></div>
+        <div class="spec-item"><span class="spec-label">Stack</span><span class="spec-value">Python, MCP, Docker</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal reveal-delay-2" style="display: flex; justify-content: flex-end;">
+      <div class="logo-anim-wrap" style="width: 360px; height: 360px;">
+        <div class="logo-glow"></div>
+        <div class="logo-ring"></div>
+        <div class="logo-ring-2"></div>
+        <img src="../assets/zero-alpha-logo.png" alt="Visual" class="logo-anim">
+      </div>
+    </div>
+  </div>
+
+<section class="section">
+  <div class="container">
+    <div class="content-grid">
+      <div class="narrative">
+        <h2>The Core Problem</h2>
+        <p>
+          As AI agents gain the ability to use tools—editing files, making API calls, and accessing emails—the security risk increases exponentially. Current systems often grant broad, unverified access to personal and corporate data, creating a massive vulnerability for "Prompt Injection" and data leaks.
+        </p>
+
+        <h2>Our Solution</h2>
+        <p>
+          Zero Alpha is a secure environment for AI agents. It uses a "Verified Boundary" architecture where every tool-use request is mediated by a security-focused agent that checks the intent against defined user policies.
+        </p>
+        <p>
+          The system leverages the <strong>Model Context Protocol (MCP)</strong> to provide a standardized, secure connection between the LLM and external data sources, ensuring that the agents only see what they absolutely need to perform a task.
+        </p>
+
+        <h2>Impact & Architecture</h2>
+        <p>
+          By separating the "Orchestrator" from the "Executor" agents and running all tool actions in isolated, sandbox environments, Zero Alpha provides the first viable path for bringing high-autonomy agents into enterprise production without risking confidential data.
+        </p>
+      </div>
+
+      <div class="outcome-box">
+        <div class="metric">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Local Tool Execution</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">0</div>
+          <div class="metric-label">Data Leaks to Model Providers</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value"><10ms</div>
+          <div class="metric-label">Security Mediation Latency</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">50+</div>
+          <div class="metric-label">Custom Tool Integrations</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="../js/shared.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
