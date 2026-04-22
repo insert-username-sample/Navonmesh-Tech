@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Navonmesh</title>
+<meta name="description" content="Start a project with Navonmesh. Tell us what you're trying to build.">
+<link rel="icon" type="image/png" href="assets/logo-white.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-dark">
+
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section class="about-hero" style="min-height:40vh;">
+  <div class="hero-bg"></div>
+  <div class="hero-noise"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="label reveal">Contact</span>
+    <h1 class="page-hero-headline reveal reveal-delay-1">
+      Let's build<br>something that<br><span style="color:var(--accent)">actually works.</span>
+    </h1>
+  </div>
+</section>
+
+<!-- ── CONTACT FORM ──────────────────────────────────────── -->
+<section class="section section-deep">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: info -->
+      <div>
+        <h2 class="contact-info-title reveal">Start a project.<br>Ask a question.<br>Or just say hi.</h2>
+        <p class="contact-info-body reveal reveal-delay-1">
+          We work with a limited number of clients at a time. If you're ready to deploy real technology — not just evaluate it — we should talk.
+        </p>
+
+        <div class="contact-detail reveal reveal-delay-2">
+          <div class="contact-detail-icon">@</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value">hello@navonmesh.tech</div>
+          </div>
+        </div>
+        <div class="contact-detail reveal reveal-delay-3">
+          <div class="contact-detail-icon">⌖</div>
+          <div>
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-value">Nagpur, Maharashtra, India</div>
+          </div>
+        </div>
+        <div class="contact-detail reveal" style="transition-delay:0.4s;">
+          <div class="contact-detail-icon">◈</div>
+          <div>
+            <div class="contact-detail-label">Website</div>
+            <div class="contact-detail-value">navonmesh.tech</div>
+          </div>
+        </div>
+
+        <!-- What to expect -->
+        <div style="margin-top:56px;" class="reveal" style="transition-delay:0.5s;">
+          <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px;">What to Expect</div>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <span style="font-family:var(--font-mono);font-size:12px;color:var(--accent);flex-shrink:0;padding-top:2px;">01</span>
+              <p style="font-size:14px;color:var(--dim);line-height:1.6;">We'll reply within 24 hours with specific questions or a direct response.</p>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <span style="font-family:var(--font-mono);font-size:12px;color:var(--accent);flex-shrink:0;padding-top:2px;">02</span>
+              <p style="font-size:14px;color:var(--dim);line-height:1.6;">If it's a fit, we schedule a 30-minute call to understand the problem properly.</p>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <span style="font-family:var(--font-mono);font-size:12px;color:var(--accent);flex-shrink:0;padding-top:2px;">03</span>
+              <p style="font-size:14px;color:var(--dim);line-height:1.6;">We send a scoped proposal — specific, honest, and actionable. No vague retainer offers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal reveal-delay-1">
+        <div class="form-card">
+          <form id="contact-form">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+              <div class="form-group">
+                <label class="form-label" for="name">Your Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Rahul Sharma" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="rahul@company.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">Company / Role</label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="Founder @ Startup / CTO @ Company">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">What are you looking for?</label>
+              <select class="form-input" id="service" name="service" style="cursor:none;">
+                <option value="" disabled selected style="background:var(--dark-mid);">Select a service</option>
+                <option value="ai-automation" style="background:var(--dark-mid);">AI Workflow Automation</option>
+                <option value="rag" style="background:var(--dark-mid);">RAG / Knowledge Systems</option>
+                <option value="agentic" style="background:var(--dark-mid);">Agentic Product Build</option>
+                <option value="embedded" style="background:var(--dark-mid);">Embedded / IoT Systems</option>
+                <option value="fullstack" style="background:var(--dark-mid);">Full-Stack Engineering</option>
+                <option value="strategy" style="background:var(--dark-mid);">Technical Strategy</option>
+                <option value="sme" style="background:var(--dark-mid);">SME Tech Infrastructure</option>
+                <option value="other" style="background:var(--dark-mid);">Something else</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:32px;">
+              <label class="form-label" for="message">What are you trying to build?</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Describe the problem you're solving, what you've tried, and what outcome you're looking for. The more specific, the better." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message →</button>
+          </form>
+
+          <div id="form-success" class="form-success">
+            <div class="form-success-icon">◈</div>
+            <div class="form-success-msg">Message received.</div>
+            <p class="form-success-sub">We'll reply within 24 hours. Talk soon.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────── -->
+<section class="section page-dark">
+  <div class="container" style="max-width:800px;">
+    <span class="label reveal">FAQ</span>
+    <h2 class="reveal reveal-delay-1" style="font-family:var(--font-display);font-size:clamp(28px,3.5vw,42px);font-weight:800;letter-spacing:-0.03em;color:var(--white);line-height:1.1;margin-bottom:56px;">
+      Common questions.
+    </h2>
+
+    <div style="display:flex;flex-direction:column;gap:1px;background:var(--border-sub);border-radius:12px;overflow:hidden;">
+      <div class="faq-item reveal" style="background:var(--dark-mid);padding:32px 36px;">
+        <div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--white);margin-bottom:12px;">How do you price projects?</div>
+        <p style="font-size:15px;line-height:1.7;color:var(--dim);">Project-based, scoped upfront. We don't do open-ended retainers. After discovery, you get a clear proposal with a fixed scope and price. Changes in scope are discussed and agreed before work starts — not billed as surprises after.</p>
+      </div>
+      <div class="faq-item reveal reveal-delay-1" style="background:var(--dark-mid);padding:32px 36px;">
+        <div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--white);margin-bottom:12px;">Do you work with early-stage startups?</div>
+        <p style="font-size:15px;line-height:1.7;color:var(--dim);">Yes — if the problem is specific and the timeline is realistic. We don't work well with "we'll figure out what we want as we go." But if you know the problem you're solving and need a technical partner who moves fast, we're a good fit.</p>
+      </div>
+      <div class="faq-item reveal reveal-delay-2" style="background:var(--dark-mid);padding:32px 36px;">
+        <div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--white);margin-bottom:12px;">Can you work with our existing team?</div>
+        <p style="font-size:15px;line-height:1.7;color:var(--dim);">Absolutely. We often integrate with in-house developers, product managers, and domain experts. We're not a black box — we document everything, explain our decisions, and make sure your team can own the output.</p>
+      </div>
+      <div class="faq-item reveal reveal-delay-3" style="background:var(--dark-mid);padding:32px 36px;">
+        <div style="font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--white);margin-bottom:12px;">What industries do you work in?</div>
+        <p style="font-size:15px;line-height:1.7;color:var(--dim);">We're technology-generalists, not industry specialists. We've built for services, manufacturing, legal, and e-commerce. The common thread is always a concrete problem that technology can solve — not a vague desire to "do AI."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/shared.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

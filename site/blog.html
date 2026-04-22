@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Frontier Tech & AI Insights | Navonmesh</title>
+<meta name="description" content="Weekly insights on AI systems, R&D deep dives, and the frontier of applied innovation.">
+<link rel="icon" type="image/png" href="assets/logo-white.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 64px;
+  }
+  .blog-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-sub);
+    border-radius: 16px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s var(--ease-snap);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .blog-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 35px var(--accent-glow);
+  }
+  .blog-card-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--bg-mid);
+    position: relative;
+    overflow: hidden;
+  }
+  .blog-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  .blog-content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .blog-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    width: fit-content;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+  }
+  .blog-date {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-bottom: 12px;
+    display: block;
+  }
+  .blog-title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 14px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+  .blog-excerpt {
+    font-size: 15px;
+    color: var(--text-sub);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+  .blog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-sub);
+  }
+  .read-more {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+  }
+  .read-more:hover { gap: 12px; }
+  
+  .filter-tabs {
+    display: flex;
+    gap: 12px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+  }
+  .filter-tab {
+    padding: 8px 24px;
+    border-radius: 100px;
+    background: var(--bg-card-sub);
+    border: 1px solid var(--border-sub);
+    color: var(--text-sub);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .filter-tab.active, .filter-tab:hover {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    .blog-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body class="page-dark">
+
+<header class="section-deep" style="padding-top:160px; padding-bottom: 80px;">
+  <div class="container">
+    <span class="label">The Signal</span>
+    <h1 class="page-hero-headline" style="margin-bottom: 24px;">
+      Frontier insights.<br>Real-world <span style="color:var(--accent)">engineering.</span>
+    </h1>
+    <p style="font-size:18px; color:var(--text-sub); max-width:600px; line-height:1.7;">
+      Weekly deep dives into AI systems, hardware R&D, and the methodologies we use to build for the next decade.
+    </p>
+
+    <div class="filter-tabs">
+      <div class="filter-tab active">All Updates</div>
+      <div class="filter-tab">AI News</div>
+      <div class="filter-tab">R&D Deep Dives</div>
+      <div class="filter-tab">Science</div>
+    </div>
+
+    <div class="blog-grid" id="blog-grid">
+      <!-- Blog 1: Claude Mythos -->
+      <article class="blog-card" data-category="AI News">
+        <div class="blog-card-img">
+          <img src="assets/blog-mythos.jpg" alt="Claude Mythos">
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">AI News</span>
+          <span class="blog-date">April 12, 2026</span>
+          <h3 class="blog-title">Project Glasswing & Claude Mythos Preview</h3>
+          <p class="blog-excerpt">Anthropic's latest model hunts thousands of zero-day bugs in Linux and browsers autonomously. A new era for cybersecurity.</p>
+          <div class="blog-footer">
+            <a href="projects/blog/claude-mythos.html" class="read-more">Read Deep Dive &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog 2: DeepSeek Expert -->
+      <article class="blog-card" data-category="AI News">
+        <div class="blog-card-img">
+          <img src="assets/blog-deepseek.jpg" alt="DeepSeek Expert">
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">AI News</span>
+          <span class="blog-date">April 12, 2026</span>
+          <h3 class="blog-title">DeepSeek Expert Mode: A Sneak Peek at V4?</h3>
+          <p class="blog-excerpt">The new mode thinks deeper on math and coding. We analyze the performance shift and what it means for the next frontier model.</p>
+          <div class="blog-footer">
+            <a href="projects/blog/deepseek-expert.html" class="read-more">Read Deep Dive &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog 3: MiroThinker -->
+      <article class="blog-card" data-category="R&D Deep Dives">
+        <div class="blog-card-img">
+          <img src="assets/blog-mirothinker.jpg" alt="MiroThinker">
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">R&D Deep Dives</span>
+          <span class="blog-date">March 22, 2026</span>
+          <h3 class="blog-title">MiroThinker 1.7-H1: Zero-Hallucination Verification</h3>
+          <p class="blog-excerpt">A dual-layer verification system that forces agents to seek out evidence before guessing. Reliability for financial and scientific ops.</p>
+          <div class="blog-footer">
+            <a href="projects/blog/mirothinker-verification.html" class="read-more">Read Deep Dive &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog 4: NVIDIA Vera Rubin -->
+      <article class="blog-card" data-category="Science">
+        <div class="blog-card-img">
+          <img src="assets/blog-nvidia.jpg" alt="NVIDIA Vera Rubin">
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Science</span>
+          <span class="blog-date">March 22, 2026</span>
+          <h3 class="blog-title">Vera Rubin: Scaling the World's AI Factories</h3>
+          <p class="blog-excerpt">NVIDIA's new platform combines seven new chips to revolutionize AI pretraining. The infrastructure of configurable intelligence.</p>
+          <div class="blog-footer">
+            <a href="projects/blog/nvidia-vera-rubin.html" class="read-more">Read Deep Dive &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog 5: MiniMax M2.7 -->
+      <article class="blog-card" data-category="R&D Deep Dives">
+        <div class="blog-card-img">
+          <img src="assets/blog-minimax.jpg" alt="MiniMax M2.7">
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">R&D Deep Dives</span>
+          <span class="blog-date">March 22, 2026</span>
+          <h3 class="blog-title">MiniMax M2.7: The Dawn of Self-Evolving Models</h3>
+          <p class="blog-excerpt">Models that help build and improve themselves. We explore the multi-agent teams debugging live systems across the globe.</p>
+          <div class="blog-footer">
+            <a href="projects/blog/minimax-self-evolution.html" class="read-more">Read Deep Dive &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog 6: Foundation-1 Music -->
+      <article class="blog-card" data-category="Science">
+        <div class="blog-card-img">
+          <img src="assets/blog-music.jpg" alt="Foundation-1 Music">
+        </div>
+        <div class="blog-content">
+          <span class="blog-tag">Science</span>
+          <span class="blog-date">March 22, 2026</span>
+          <h3 class="blog-title">Foundation-1: Text-to-Sample for Music Production</h3>
+          <p class="blog-excerpt">Generating high-quality musical loops with control over instrument identity and timbre. A new layer for creative composability.</p>
+          <div class="blog-footer">
+            <a href="projects/blog/foundation-1-music.html" class="read-more">Read Deep Dive &rarr;</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</header>
+<section class="section" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+        <div>
+          <span class="label">Stay Updated</span>
+          <h2 style="font-family:var(--font-display);font-size:32px;font-weight:800;color:var(--text);margin-bottom:16px;">The Signal.</h2>
+          <p style="font-size:16px;color:var(--text-sub);line-height:1.7;">
+            No spam. Just hard-won engineering insights, R&D updates, and high-fidelity building frameworks delivered monthly.
+          </p>
+        </div>
+        <div>
+          <form id="newsletter-form" style="display: flex; gap: 12px;">
+            <input type="email" placeholder="Enter your email" required style="flex-grow: 1; padding: 16px 24px; border-radius: 12px; background: var(--bg-mid); border: 1px solid var(--border-sub); color: var(--text); font-family: inherit;">
+            <button type="submit" class="btn btn-primary" style="padding: 0 32px;">Subscribe</button>
+          </form>
+          <p style="font-size: 12px; color: var(--text-dim); margin-top: 12px; opacity: 0.6;">Privacy-first. Join 500+ builders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="js/shared.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Filter Logic
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const articleCards = document.querySelectorAll('.blog-card');
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const filterValue = tab.textContent.trim();
+
+      articleCards.forEach(card => {
+        if (filterValue === 'All Updates' || card.getAttribute('data-category') === filterValue) {
+          card.style.display = 'flex';
+          card.style.opacity = '0';
+          setTimeout(() => {
+            card.style.opacity = '1';
+          }, 10);
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

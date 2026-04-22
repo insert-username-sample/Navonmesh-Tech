@@ -1,0 +1,7 @@
+﻿- [x] Rename 'Showcase' to 'Portfolio' in shared.js
+- [x] Rename 'Showcase' to 'Portfolio' in showcase.html
+- [x] Implement dynamic favicon/logo switching in shared.js
+- [x] Replace generic logos in showcase.html (Portfolio Grid)
+- [x] Replace generic logos in all project pages
+- [x] Add backlinks for Clausely, Tuitionly, and SwiftWash
+- [x] Verify all links and visual assets on local server

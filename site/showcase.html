@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — See What We Build | Navonmesh</title>
+<meta name="description" content="An index of frontier projects, ventures, and R&D systems built at Navonmesh.">
+<link rel="icon" type="image/png" href="assets/logo-white.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 64px;
+  }
+  .project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .project-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px var(--accent-glow);
+  }
+  .project-icon-wrap {
+    width: 56px;
+    height: 56px;
+    background: var(--bg-card-sub);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border: 1px solid var(--border-sub);
+  }
+  .project-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  .project-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+  }
+  .project-title {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .project-desc {
+    font-size: 15px;
+    color: var(--text-sub);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    flex-grow: 1;
+  }
+  .project-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+  }
+  .project-link:hover {
+    color: var(--accent);
+  }
+  .project-link svg {
+    transition: transform 0.3s ease;
+  }
+  .project-link:hover svg {
+    transform: translateX(4px);
+  }
+  .filter-tabs {
+    display: flex;
+    gap: 12px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+  }
+  .filter-tab {
+    padding: 8px 20px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    color: var(--dim);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .filter-tab.active, .filter-tab:hover {
+    background: var(--accent);
+    color: var(--dark);
+    border-color: var(--accent);
+  }
+  
+  /* Additional clickable styles */
+  .project-card-link {
+    display: contents;
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+</head>
+<body class="page-dark">
+
+
+
+<header class="section-deep" style="padding-top:160px; padding-bottom: 80px; position: relative; overflow: hidden;">
+  <div class="container" style="position: relative; z-index: 2;">
+    <span class="label">Portfolio</span>
+    <h1 class="page-hero-headline" style="margin-bottom: 24px;">
+      Applied innovation<br>in <span style="color:var(--accent)">production.</span>
+    </h1>
+    <p style="font-size:18px; color:var(--dim); max-width:600px; line-height:1.7;">
+      From consumer quick-commerce to custom silicon architecture. This is a living index of the ventures, products, and R&D systems built by Navonmesh.
+    </p>
+
+    <div class="filter-tabs">
+      <div class="filter-tab active">All Ventures</div>
+      <div class="filter-tab">Core Startups</div>
+      <div class="filter-tab">Deep Tech</div>
+      <div class="filter-tab">R&D Labs</div>
+      <div class="filter-tab">Personal Brand</div>
+    </div>
+
+    <div class="showcase-grid" id="project-grid">
+      <!-- Project 1: SwiftWash -->
+      <a href="projects/swiftwash.html" class="project-card-link">
+        <div class="project-card" data-category="Core Startups">
+          <span class="project-tag">Core Startup</span>
+          <div class="project-icon-wrap">
+            <img src="assets/swiftwash-logo.png" alt="SwiftWash" class="project-icon">
+          </div>
+          <h3 class="project-title">SwiftWash</h3>
+          <p class="project-desc">Premium Hyperlocal Laundry ecosystem. Multi-app infrastructure for customers, operators, and logistics with real-time tracking.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 2: Clausely -->
+      <a href="projects/clausely.html" class="project-card-link">
+        <div class="project-card" data-category="Core Startups">
+          <span class="project-tag">AI SaaS</span>
+          <div class="project-icon-wrap">
+            <img src="assets/clausely-logo.png" alt="Clausely" class="project-icon">
+          </div>
+          <h3 class="project-title">Clausely</h3>
+          <p class="project-desc">AI-First legal compliance platform for India. Automating clause analysis, policy generation, and multi-jurisdiction safety.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 3: Zero Alpha -->
+      <a href="projects/zero-alpha.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Agentic AI</span>
+          <div class="project-icon-wrap">
+            <img src="assets/zero-alpha-logo.png" alt="Zero Alpha" class="project-icon">
+          </div>
+          <h3 class="project-title">Zero Alpha</h3>
+          <p class="project-desc">A secure, private agentic AI OS. Multi-agent coordination with local tool-use and verified capability boundaries.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 4: Vizo -->
+      <a href="projects/vizo.html" class="project-card-link">
+        <div class="project-card" data-category="Core Startups">
+          <span class="project-tag">Supply Chain</span>
+          <div class="project-icon-wrap">
+            <img src="assets/vizo-logo-white.png" alt="Vizo" class="project-icon vizo-logo">
+          </div>
+          <h3 class="project-title">Vizo</h3>
+          <p class="project-desc">Quick-commerce infrastructure for Kirana shops. Hyperlocal nodes that outperform dark stores on operational cost.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+       <!-- Project 5: Pursuit -->
+       <a href="projects/pursuit-npu.html" class="project-card-link">
+         <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Deep Tech</span>
+          <div class="project-icon-wrap">
+            <img src="assets/pursuit-npu-logo.png" alt="Pursuit NPU" class="project-icon">
+          </div>
+          <h3 class="project-title">Pursuit</h3>
+          <p class="project-desc">Custom Processor & NPU architecture research. Non-ARM designs for the 2035 agentic hardware horizon.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 6: Tuitionly -->
+      <a href="projects/tuitionly.html" class="project-card-link">
+        <div class="project-card" data-category="Core Startups">
+          <span class="project-tag">EdTech</span>
+          <div class="project-icon-wrap">
+            <img id="tuitionly-logo" src="assets/tuitionly-logo-dark.png" alt="Tuitionly" class="project-icon">
+          </div>
+          <h3 class="project-title">Tuitionly</h3>
+          <p class="project-desc">The Student Operating System. Centralizing schedules, academic resources, and performance tracking.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 7: OpenClaw -->
+      <a href="projects/openclaw.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Sovereign R&D</span>
+          <div class="project-icon-wrap">
+            <img src="assets/openclaw-logo-premium.png" alt="OpenClaw" class="project-icon">
+          </div>
+          <h3 class="project-title">OpenClaw</h3>
+          <p class="project-desc">Sovereign agent stack featuring an ADB hardware bridge and 'Perfect Mirror' contextual archival for absolute local autonomy.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 8: Project AETERNITAS -->
+      <a href="projects/project-aeternitas.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Volumetric R&D</span>
+          <div class="project-icon-wrap">
+            <img src="assets/antigravity-logo.png" alt="AETERNITAS" class="project-icon">
+          </div>
+          <h3 class="project-title">AETERNITAS</h3>
+          <p class="project-desc">Hyper-realistic AI acting pipeline utilizing generative hallucination to achieve cinematic 4K volumetric avatar synthesis.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 9: Mediapipe VR -->
+      <a href="projects/mediapipe-vr.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Spatial Computing</span>
+          <div class="project-icon-wrap">
+            <img src="assets/navonmesh-white.png" alt="Mediapipe VR" class="project-icon default-logo">
+          </div>
+          <h3 class="project-title">Mediapipe VR</h3>
+          <p class="project-desc">Single-camera full-body tracking utilizing dual-filter smoothing (Kalman + OneEuro) for high-fidelity spatial immersion.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 10: Almost Alien -->
+      <a href="projects/almost-alien.html" class="project-card-link">
+        <div class="project-card" data-category="Personal Brand">
+          <span class="project-tag">Fashion Tech</span>
+          <div class="project-icon-wrap">
+            <img src="assets/almost-alien-logo.png" alt="Almost Alien" class="project-icon">
+          </div>
+          <h3 class="project-title">Almost Alien</h3>
+          <p class="project-desc">A frontier wearable brand exploring the aesthetics of trans-humanism and smart textiles.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 11: Vibe Motion -->
+      <a href="projects/vibe-motion.html" class="project-card-link">
+        <div class="project-card" data-category="R&D Labs">
+          <span class="project-tag">Haptics</span>
+          <div class="project-icon-wrap">
+            <img src="assets/vibe-motion-logo.png" alt="Vibe Motion" class="project-icon">
+          </div>
+          <h3 class="project-title">Vibe Motion</h3>
+          <p class="project-desc">Bespoke hardware for high-fidelity haptic feedback in immersive spatial environments.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- Project 12: AG Beast -->
+      <a href="projects/ag-beast.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Performance</span>
+          <div class="project-icon-wrap">
+            <img src="assets/ag-beast-logo.png" alt="AG Beast" class="project-icon">
+          </div>
+          <h3 class="project-title">AG Beast</h3>
+          <p class="project-desc">Extreme optimization stack. Maximizing silicon efficiency for edge-compute agentic fleets.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+
+      <!-- Project 15: Antigravity Overlord -->
+      <a href="projects/antigravity-overlord.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Agentic AI</span>
+          <div class="project-icon-wrap">
+            <img src="assets/antigravity-overlord-logo.png" alt="Antigravity Overlord" class="project-icon">
+          </div>
+          <h3 class="project-title">Antigravity Overlord</h3>
+          <p class="project-desc">Supreme orchestration layer for agentic fleets, featuring PowerFlow observation and real-time gRPC quota monitoring.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+
+
+      <!-- Project 19: Social Media Growth -->
+      <a href="projects/social-media-growth.html" class="project-card-link">
+        <div class="project-card" data-category="Personal Brand">
+          <span class="project-tag">Distribution</span>
+          <div class="project-icon-wrap">
+            <img src="assets/social-media-growth-logo.png" alt="Social Engine" class="project-icon">
+          </div>
+          <h3 class="project-title">Social Engine</h3>
+          <p class="project-desc">Automated distribution engine analyzing engagement patterns and orchestrating content cross-pollination across platforms.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+      <!-- Project 20: Enterprise Compute -->
+      <a href="projects/enterprise-compute.html" class="project-card-link">
+        <div class="project-card" data-category="Deep Tech">
+          <span class="project-tag">Infrastructure</span>
+          <div class="project-icon-wrap">
+            <img src="assets/navonmesh-white.png" alt="Enterprise Compute" class="project-icon default-logo">
+          </div>
+          <h3 class="project-title">Enterprise Compute</h3>
+          <p class="project-desc">In-house private GPU clusters and secure infrastructure for organizations requiring high-density compute with absolute data sovereignty.</p>
+          <div class="project-link">Know More &rarr; <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+      </a>
+      <!-- End of Project Grid -->
+
+    </div>
+  </div>
+</header>
+
+
+
+<script src="js/shared.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const themeBtn = document.querySelector(".theme-switch");
+    const tLogo = document.getElementById("tuitionly-logo");
+    const vLogo = document.querySelector(".vizo-logo");
+    const defaultLogos = document.querySelectorAll(".default-logo");
+    
+    const updateProjectLogos = () => {
+        const isLight = document.body.classList.contains("light");
+        
+        // Tuitionly
+        if (tLogo) {
+            tLogo.src = isLight ? "assets/tuitionly-logo-light.png" : "assets/tuitionly-logo-dark.png";
+        }
+        
+        // Vizo
+        if (vLogo) {
+            vLogo.src = isLight ? "assets/vizo-logo-black.png" : "assets/vizo-logo-white.png";
+        }
+        
+        // Default Navonmesh logos
+        defaultLogos.forEach(logo => {
+            logo.src = isLight ? "assets/navonmesh-black.png" : "assets/navonmesh-white.png";
+        });
+    };
+
+    // Initial run
+    updateProjectLogos();
+
+    // Toggle listener
+    themeBtn.addEventListener("click", () => {
+        setTimeout(updateProjectLogos, 50);
+    });
+
+    // Filter Logic
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const projectCards = document.querySelectorAll('.project-card-link');
+
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            filterTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const filterValue = tab.textContent.trim();
+
+            projectCards.forEach(cardLink => {
+                const card = cardLink.querySelector('.project-card');
+                if (filterValue === 'All Ventures' || card.getAttribute('data-category') === filterValue) {
+                    cardLink.style.display = 'contents';
+                } else {
+                    cardLink.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
