@@ -84,10 +84,11 @@ function applyBranding() {
 }
 
 // Initial apply
-applyBranding();
+// applyBranding();
+// Removed manual injections to prevent duplication with hard-coded HTML
+// document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
+// document.body.insertAdjacentHTML('beforeend', FOOTER_HTML);
 
-document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
-document.body.insertAdjacentHTML('beforeend', FOOTER_HTML);
 
 // Apply saved theme before paint
 if (localStorage.getItem('nm-theme') === 'light') {
