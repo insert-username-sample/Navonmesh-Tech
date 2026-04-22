@@ -1,0 +1,15 @@
+# Website Isolation
+site/
+
+# Clutter & Temporary Files
+*.zip
+temp_extraction*/
+navonmesh-untouched-*/
+navonmesh-v2-*/
+daily_shorts/
+studio/
+launch_studio.bat
+
+# OS Files
+.DS_Store
+Thumbs.db
