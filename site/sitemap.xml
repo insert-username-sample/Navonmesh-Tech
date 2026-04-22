@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://navonmesh.in/</loc><priority>1.0</priority></url>
+  <url><loc>https://navonmesh.in/about</loc><priority>0.9</priority></url>
+  <url><loc>https://navonmesh.in/services</loc><priority>0.8</priority></url>
+  <url><loc>https://navonmesh.in/process</loc><priority>0.8</priority></url>
+  <url><loc>https://navonmesh.in/showcase</loc><priority>0.8</priority></url>
+  <url><loc>https://navonmesh.in/blog</loc><priority>0.7</priority></url>
+  <url><loc>https://navonmesh.in/contact</loc><priority>0.7</priority></url>
+  <!-- Projects -->
+  <url><loc>https://navonmesh.in/projects/ag-beast</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/almost-alien</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/antigravity-overlord</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/clausely</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/enterprise-compute</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/goofycast</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/interior-ai</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/mediapipe-vr</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/motovlogging</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/navonmesh-research</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/openclaw</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/project-aeternitas</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/pursuit-npu</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/sentient-ai</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/sih-2025</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/social-media-growth</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/swiftwash</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/tuitionly</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/vapi-integration</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/vibe-motion</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/vizo</loc><priority>0.6</priority></url>
+  <url><loc>https://navonmesh.in/projects/zero-alpha</loc><priority>0.6</priority></url>
+</urlset>
