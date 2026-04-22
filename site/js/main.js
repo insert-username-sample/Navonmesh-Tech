@@ -110,33 +110,32 @@ if (form) {
   }
 
   function onScroll() {
-    const wrapRect = wrap.getBoundingClientRect();
-    const wrapH    = wrap.offsetHeight;
-    const wrapTop  = wrapRect.top + window.scrollY;
-
-    // Viewport relative trigger point (center)
-    const viewMid = window.scrollY + window.innerHeight * 0.5;
+    const wrapRect  = wrap.getBoundingClientRect();
+    const wrapH     = wrap.offsetHeight;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
     
-    // Calculate progress with a slight padding to ensure it starts at the top node
-    // and ends exactly at the bottom node.
-    const startOffset = nodes[0] ? nodes[0].offsetTop : 0;
-    const endOffset   = nodes[nodes.length-1] ? nodes[nodes.length-1].offsetTop : wrapH;
-    const scrollH     = endOffset - startOffset;
+    // The visual "trigger line" for activating steps
+    const triggerPoint = window.innerHeight * 0.55; 
     
-    const rawPct  = (viewMid - (wrapTop + startOffset)) / scrollH;
-    const pct     = Math.max(0, Math.min(1, rawPct));
+    // How far we have scrolled past the start of the timeline line
+    const scrollInLine = (scrollTop + triggerPoint) - (wrapRect.top + scrollTop);
+    
+    // Convert to percentage
+    let pct = scrollInLine / wrapH;
+    pct = Math.max(0, Math.min(1, pct));
 
-    const currentPos = startOffset + (pct * scrollH);
-    const pctRelative = (currentPos / wrapH) * 100;
+    const pctRelative = pct * 100;
 
     // Move fill and dot
     fill.style.height = pctRelative + '%';
     dot.style.top     = pctRelative + '%';
 
-    // Light up nodes
-    const mids = getStepMids();
+    // Light up nodes based on their position relative to the scroll progress
     nodes.forEach((node, i) => {
-      node.classList.toggle('lit', mids[i] <= currentPos + 2); // +2 for smoothing
+      const nodeTop = node.getBoundingClientRect().top + scrollTop;
+      const wrapTopGlobal = wrapRect.top + scrollTop;
+      const nodeOffsetPct = ((nodeTop - wrapTopGlobal) / wrapH) * 100;
+      node.classList.toggle('lit', pctRelative >= nodeOffsetPct - 2);
     });
   }
 

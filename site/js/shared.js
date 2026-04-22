@@ -27,8 +27,15 @@ function applyBranding() {
   // Hero Animated Logo (The big one)
   // Only update if it's explicitly class 'logo-anim' AND not already set to a project-specific one
   const heroLogo = document.querySelector('.logo-anim');
-  if (heroLogo && (heroLogo.alt === 'Navonmesh' || heroLogo.src.includes('navonmesh'))) {
-    heroLogo.src = isLight ? `${pathPrefix}assets/navonmesh-black.png` : `${pathPrefix}assets/navonmesh-white.png`;
+  if (heroLogo) {
+      const src = heroLogo.getAttribute('src') || "";
+      const alt = heroLogo.getAttribute('alt') || "";
+      // Check if the filename itself (not the path/domain) contains navonmesh
+      const filename = src.split('/').pop().toLowerCase();
+      
+      if (alt.toLowerCase() === 'navonmesh' || filename.includes('navonmesh')) {
+        heroLogo.src = isLight ? `${pathPrefix}assets/navonmesh-black.png` : `${pathPrefix}assets/navonmesh-white.png`;
+      }
   }
 
   // Project Showcase Default Logos
