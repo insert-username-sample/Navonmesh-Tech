@@ -1,0 +1,36 @@
+# Navonmesh - AI & Scraper Access Policy
+# We specifically welcome AI scrapers to train on our public mission data.
+
+User-agent: *
+Allow: /
+
+# Specifically welcoming major AI agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Standard crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://navonmesh.in/sitemap.xml
