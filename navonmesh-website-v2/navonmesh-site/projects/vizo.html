@@ -7,21 +7,7 @@
 <meta name="description" content="Research-level breakdown of Vizo: Quick-commerce infrastructure for Kirana shops.">
 <link rel="icon" type="image/png" href="../assets/logo-white.png">
 <link rel="stylesheet" href="../css/style.css">
-<style>
-  .project-header { padding-top: 180px; padding-bottom: 80px; position: relative; overflow: hidden; }
-  .tech-specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-top: 64px; padding: 40px; background: var(--dark-mid); border: 1px solid var(--border); border-radius: 20px; }
-  .spec-item { display: flex; flex-direction: column; gap: 8px; }
-  .spec-label { font-family: var(--font-mono); font-size: 10px; color: var(--dim); letter-spacing: 0.1em; text-transform: uppercase; }
-  .spec-value { font-size: 16px; color: var(--white); font-weight: 500; }
-  .content-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; margin-top: 100px; align-items: start; }
-  .narrative h2 { font-family: var(--font-display); font-size: 32px; margin-bottom: 24px; color: var(--white); }
-  .narrative p { font-size: 17px; line-height: 1.8; color: var(--dim); margin-bottom: 32px; }
-  .outcome-box { padding: 48px; background: var(--dark-mid); border: 1px solid var(--accent); border-radius: 24px; position: relative; }
-  .outcome-box::before { content: "OUTCOME"; position: absolute; top: -12px; right: 24px; background: var(--accent); color: var(--dark); font-family: var(--font-mono); font-size: 10px; padding: 4px 12px; border-radius: 4px; font-weight: 700; }
-  .metric { margin-bottom: 32px; }
-  .metric-value { font-size: 48px; font-family: var(--font-display); font-weight: 800; color: var(--white); margin-bottom: 4px; }
-  .metric-label { font-size: 14px; color: var(--accent); font-weight: 500; }
-</style>
+
 </head>
 <body class="page-dark">
 
@@ -58,20 +44,32 @@
 
 
 <header class="project-header">
-  <div class="hero-bg"></div>
   
-  <div class="container" style="position:relative; z-index:1; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+<header class="project-header">
+  <div class="hero-bg"></div>
+  <div class="container project-hero-content">
     <div>
       <span class="label">Case Study 02</span>
-      <h1 class="page-hero-headline" style="margin-bottom:24px;">Vizo:<br>Dark Store Disruption.</h1>
+      <h1 class="page-hero-headline">Vizo: Dark Store Disruption.</h1>
       <p style="font-size:20px; color:var(--text-sub); max-width:700px; line-height:1.7;">
         Enabling 10-minute quick commerce for local Kirana shops by turning existing retail inventory into a high-speed distribution node.
       </p>
-      <div class="tech-specs" style="margin-top: 40px;">
+      <div class="tech-specs">
         <div class="spec-item"><span class="spec-label">Category</span><span class="spec-value">Quick Commerce</span></div>
         <div class="spec-item"><span class="spec-label">Stack</span><span class="spec-value">React Native, Supabase</span></div>
       </div>
     </div>
+    <div class="hero-visual reveal reveal-delay-2" style="display: flex; justify-content: flex-end;">
+      <div class="logo-anim-wrap">
+        <div class="logo-glow"></div>
+        <div class="logo-ring"></div>
+        <div class="logo-ring-2"></div>
+        <img src="../assets/vizo-logo.png" alt="Visual" class="logo-anim">
+      </div>
+    </div>
+  </div>
+</header>
+
     <div class="hero-visual reveal reveal-delay-2" style="display: flex; justify-content: flex-end;">
       <div class="logo-anim-wrap" style="width: 360px; height: 360px;">
         <div class="logo-glow"></div>
